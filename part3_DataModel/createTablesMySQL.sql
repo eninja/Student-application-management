@@ -1,10 +1,3 @@
-# Data Model
-Entity Relationship Diagram with SQL commands to apply them to database.
-
-
-![alt text](./ERD.png "Diagram ERD")
-
-```sql
 CREATE TABLE `Applications` (
   `application id` integer,
   `student id` integer,
@@ -39,6 +32,3 @@ CREATE TABLE `Marks` (
   `updated at` date/time
 );
 
-```
-
-Created with [lucidchart.com](https://lucidchart.com/)
