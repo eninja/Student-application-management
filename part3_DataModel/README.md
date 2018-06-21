@@ -10,7 +10,7 @@ CREATE TABLE `Applications` (
   `student id` integer,
   `mark id` integer,
   `sum of points` integer,
-  `state` enum,
+  `state` enum('draft', 'sent', 'rejected', 'completed', 'accepted', 'unaccepted'),
   `created at` date/time,
   `updated at` date/time
 );
