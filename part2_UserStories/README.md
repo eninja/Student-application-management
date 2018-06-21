@@ -7,7 +7,7 @@ As a (user), I want (function), so that (value)
 ## As a admission officer, I want
 *  to have an access to officer panel, so that I could view all applicants in a table form and easily sort and filter them
 *  to have an easy way to edit fields of the form, so that I could choose which fields are required to be filled before student can submit application
-* to be able to change status of application manually, so I could
+* to be able to change status of application manually, so that I could update applications sent by post
 
 ## As a student, I want
 *  to be able to search through the website, so that I could find content I need easier and faster
