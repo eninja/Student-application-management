@@ -1,5 +1,9 @@
 # Business processes
 The most important business processes supported by the proposed solution, including:
+* [Student Admission](StudentAdmission.bpmn)
+
+![alt text](./StudentAdmission.png "BPMN Student admission")
+
 * [Registration](Registration.bpmn)
 
 ![alt text](./Registration.png "BPMN Registration")
