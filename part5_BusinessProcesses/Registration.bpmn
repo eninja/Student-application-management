@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_0ezeum4</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_0vroo47" name="Select Register">
+      <bpmn:incoming>SequenceFlow_0ezeum4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1smx8hg</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_00k8i6m" name="Complete registration form">
+      <bpmn:incoming>SequenceFlow_1smx8hg</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0bjnmkg</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0ezeum4" sourceRef="StartEvent_1" targetRef="Task_0vroo47" />
+    <bpmn:sequenceFlow id="SequenceFlow_1smx8hg" sourceRef="Task_0vroo47" targetRef="Task_00k8i6m" />
+    <bpmn:intermediateThrowEvent id="IntermediateThrowEvent_1om2tfd">
+      <bpmn:incoming>SequenceFlow_0bjnmkg</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1icalm8</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:task id="Task_01xied6" name="Redirect to:&#10;My Account">
+      <bpmn:incoming>SequenceFlow_1icalm8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1kscqgh</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_0bjnmkg" sourceRef="Task_00k8i6m" targetRef="IntermediateThrowEvent_1om2tfd" />
+    <bpmn:sequenceFlow id="SequenceFlow_1icalm8" sourceRef="IntermediateThrowEvent_1om2tfd" targetRef="Task_01xied6" />
+    <bpmn:endEvent id="EndEvent_02rfxqt">
+      <bpmn:incoming>SequenceFlow_1kscqgh</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1kscqgh" sourceRef="Task_01xied6" targetRef="EndEvent_02rfxqt" />
+    <bpmn:textAnnotation id="TextAnnotation_1rxefnr">
+      <bpmn:text>account created</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_0eezdoz" sourceRef="IntermediateThrowEvent_1om2tfd" targetRef="TextAnnotation_1rxefnr" />
+    <bpmn:textAnnotation id="TextAnnotation_0a7787u">
+      <bpmn:text>student visited website</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1ipbfqi" sourceRef="StartEvent_1" targetRef="TextAnnotation_0a7787u" />
+    <bpmn:textAnnotation id="TextAnnotation_0aip2a2">
+      <bpmn:text>registration completed</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1c8zxm4" sourceRef="EndEvent_02rfxqt" targetRef="TextAnnotation_0aip2a2" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="124" y="116" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="97" y="86" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0vroo47_di" bpmnElement="Task_0vroo47">
+        <dc:Bounds x="213" y="94" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_00k8i6m_di" bpmnElement="Task_00k8i6m">
+        <dc:Bounds x="350" y="94" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0ezeum4_di" bpmnElement="SequenceFlow_0ezeum4">
+        <di:waypoint x="160" y="134" />
+        <di:waypoint x="213" y="134" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="186.5" y="113" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1smx8hg_di" bpmnElement="SequenceFlow_1smx8hg">
+        <di:waypoint x="313" y="134" />
+        <di:waypoint x="350" y="134" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="331.5" y="113" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateThrowEvent_1om2tfd_di" bpmnElement="IntermediateThrowEvent_1om2tfd">
+        <dc:Bounds x="494" y="116" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="512" y="94" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_01xied6_di" bpmnElement="Task_01xied6">
+        <dc:Bounds x="560" y="94" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0bjnmkg_di" bpmnElement="SequenceFlow_0bjnmkg">
+        <di:waypoint x="450" y="134" />
+        <di:waypoint x="494" y="134" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="472" y="113" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1icalm8_di" bpmnElement="SequenceFlow_1icalm8">
+        <di:waypoint x="530" y="134" />
+        <di:waypoint x="560" y="134" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="545" y="113" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1rxefnr_di" bpmnElement="TextAnnotation_1rxefnr">
+        <dc:Bounds x="462" y="187" width="100" height="30" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0eezdoz_di" bpmnElement="Association_0eezdoz">
+        <di:waypoint x="512" y="152" />
+        <di:waypoint x="512" y="187" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0a7787u_di" bpmnElement="TextAnnotation_0a7787u">
+        <dc:Bounds x="92" y="187" width="100" height="42" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1ipbfqi_di" bpmnElement="Association_1ipbfqi">
+        <di:waypoint x="142" y="152" />
+        <di:waypoint x="142" y="187" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_02rfxqt_di" bpmnElement="EndEvent_02rfxqt">
+        <dc:Bounds x="692" y="116" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="710" y="94" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1kscqgh_di" bpmnElement="SequenceFlow_1kscqgh">
+        <di:waypoint x="660" y="134" />
+        <di:waypoint x="692" y="134" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="676" y="113" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0aip2a2_di" bpmnElement="TextAnnotation_0aip2a2">
+        <dc:Bounds x="660" y="187" width="100" height="42" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1c8zxm4_di" bpmnElement="Association_1c8zxm4">
+        <di:waypoint x="710" y="152" />
+        <di:waypoint x="710" y="187" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
