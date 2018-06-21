@@ -24,3 +24,6 @@ Created with [marvelapp.com](https://marvelapp.com/943a10a/screen/44644556)
 
 ### Admin panel
 ![alt text](./admin.png "Admin panel")
+
+[Previous: Data model](../part3_DataModel/README.md)
+[Next: The most important business processes supported by the proposed solution](../part5_BusinessProcesses/README.md)

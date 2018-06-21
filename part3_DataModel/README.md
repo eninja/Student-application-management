@@ -42,3 +42,7 @@ CREATE TABLE `Marks` (
 ```
 
 Created with [lucidchart.com](https://lucidchart.com/)
+
+[Previous: A list of the most important stories / functionalities that we want to implement in the system](../part2_UserStories/README.md)
+
+[Next: Prototypes of the most important user screens](../part4_UserScreens/README.md)

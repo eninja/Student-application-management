@@ -15,3 +15,5 @@ The most important business processes supported by the proposed solution, includ
 ^1 There is no need to checking the confirmation of payment, because student can't send application without it.
 
 Created with [cawemo.com](https://cawemo.com/)
+
+[Previous: Prototypes of the most important user screens](../part4_UserScreens/README.md)
