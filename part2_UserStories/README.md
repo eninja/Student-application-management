@@ -22,3 +22,7 @@ As a (user), I want (function), so that (value)
 * to send announcements to users of the system so they can be informed (about issues or scheduled maintenance events)
 * to monitor resource consumption (CPU, bandwidth I/O, data base I/O, etc.), so that I could ascertain the health of the system and its resources
 * to monitor user activity (active users, http requests, sessions open, etc.), so that I could assess system performance based on demand
+
+[Previous: A brief description of the solution](../part1_ShortDescription/README.md)
+
+[Next: Data model](../part3_DataModel/README.md)

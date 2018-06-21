@@ -16,3 +16,5 @@ Backend module:
 Frontend module:
 
     Angular
+
+[Next: A list of the most important stories / functionalities that we want to implement in the system](../part2_UserStories/README.md)
