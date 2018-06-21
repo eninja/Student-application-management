@@ -1,5 +1,5 @@
 # Student application management
-Solution for University, which want to create online student admission process from scratch.
+Solution for the University that wants to create an online student admission process from scratch.
 
 ## Parts of the solution:
 1. A brief description of the solution
